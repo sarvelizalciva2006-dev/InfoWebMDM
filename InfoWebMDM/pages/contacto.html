@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | MDM Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .contact-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        .contact-info {
+            flex: 1;
+            background: #faf6ea;
+            padding: 40px;
+            border-radius: 48px;
+        }
+        .contact-form {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 48px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .contact-info i {
+            font-size: 24px;
+            color: #e67e22;
+            margin-right: 15px;
+            width: 30px;
+        }
+        .contact-info p {
+            margin: 20px 0;
+            font-size: 1.1rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #e0d5c0;
+            border-radius: 16px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .btn-enviar {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .btn-enviar:hover {
+            background-color: #c0392b;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+        }
+        .privacidad-link {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .privacidad-link a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+        .privacidad-link a:hover {
+            text-decoration: underline;
+        }
+        .horario {
+            background: white;
+            padding: 15px;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+        .whatsapp-link {
+            color: #25D366;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .whatsapp-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MDM DIGITAL</h1>
+                    <p>Mitad del Mundo Digital · Tecnología con raíces ecuatorianas</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proceso.html">Metodología</a></li>
+                <li><a href="contacto.html" class="btn-cta-nav">Contáctanos</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" style="padding: 40px 0;">
+        <div class="container">
+            <h2 class="section-title">Hablemos de tu <span class="highlight">proyecto</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <img src="../assets/img/imagenMDM.jpeg" alt="MDM Digital" style="max-width: 180px; border-radius: 20px;">
+                    </div>
+                    <h3>¿Listo para digitalizar tu pyme?</h3>
+                    <p>Contáctanos y descubre cómo podemos ayudarte a reducir tiempos y automatizar tus procesos.</p>
+                    
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/593968698597" class="whatsapp-link" target="_blank">+593 96 869 8597</a></p>
+                    <p><i class="fas fa-phone-alt"></i> 027455798</p>
+                    <p><i class="fas fa-envelope"></i> mdmdigital@hotmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Quito, Ecuador</p>
+                    
+                    <div class="horario">
+                        <h4><i class="far fa-calendar-alt"></i> Horario de atención:</h4>
+                        <p><strong>Lunes a Viernes:</strong> 9:00 - 18:00<br>
+                        <strong>Sábados:</strong> 9:00 - 14:00<br>
+                        <strong>Domingos:</strong> Cerrado</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono / WhatsApp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre de tu empresa">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Cuéntanos qué necesitas..."></textarea>
+                        </div>
+                        
+                        <div class="privacidad-link">
+                            <input type="checkbox" id="privacidadCheck" required>
+                            <label for="privacidadCheck">Acepto el <a href="privacidad.html" target="_blank">Tratamiento de Datos Personales</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/593968698597" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h3>MDM DIGITAL</h3>
+                    <p>Tecnología con raíces ecuatorianas para hacer crecer tu pyme.</p>
+                </div>
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p><i class="fab fa-whatsapp"></i> +593 96 869 8597</p>
+                    <p><i class="fas fa-envelope"></i> mdmdigital@hotmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Quito, Ecuador</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 MDM Digital - Mitad del Mundo Digital. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const checkbox = document.getElementById('privacidadCheck');
+            if (!checkbox.checked) {
+                alert('Debes aceptar el tratamiento de datos personales para enviar el mensaje.');
+                return;
+            }
+            alert('¡Gracias por contactarnos! Pronto recibirás respuesta de nuestro equipo.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
